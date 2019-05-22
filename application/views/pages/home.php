@@ -1,7 +1,7 @@
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <a id="logo-container" href="<?php echo base_url()?>" class="brand-logo">Logo</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Navbar Link</a></li>
       </ul>
@@ -12,6 +12,7 @@
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
+  
 
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
@@ -28,7 +29,7 @@
 
       </div>
     </div>
-    <div class="parallax"><img src="assets/materialize/img/background1.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="<?php echo base_url()?>/assets/materialize/img/background1.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
 
@@ -42,7 +43,9 @@
             <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
             <h5 class="center">Speeds up development</h5>
 
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+            <p class="light">
+            
+            We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
           </div>
         </div>
 
@@ -78,7 +81,7 @@
       </div>
     </div>
 
-    <div class="parallax"><img src="assets/materialize/img/background2.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="<?php echo base_url()?>/assets/materialize/img/background2.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
   <div class="container">
@@ -104,5 +107,5 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="assets/materialize/img/background3.jpg" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img src="<?php echo base_url()?>/assets/materialize/img/background3.jpg" alt="Unsplashed background img 3"></div>
   </div>
