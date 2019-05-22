@@ -1,5 +1,5 @@
 <?php
-class Pages extends CI_Controller {
+class Pages2 extends CI_Controller {
         
         public function view($page = 'home2')
         {
@@ -12,9 +12,15 @@ class Pages extends CI_Controller {
             }
     
             $data['title'] = ucfirst($page); // Capitalize the first letter
-    
             $this->load->view('templates/header', $data);
+            $this->load->view('templates/sidenav', $data);
             $this->load->view('pages/'.$page, $data);
+            
+
+            
+
             $this->load->view('templates/footer', $data);
+            
         }
 }
+

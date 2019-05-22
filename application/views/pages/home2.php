@@ -5,11 +5,13 @@
         <li><a href="#">Navbar Link</a></li>
       </ul>
 
-      <ul id="nav-mobile" class="sidenav">
+      <!-- <ul id="nav-mobile" class="sidenav">
         <li><a href="#">Navbar Link</a></li>
       </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+      
     </div>
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
   </nav>
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
