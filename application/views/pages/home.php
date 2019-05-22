@@ -22,13 +22,13 @@
           <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
         </div>
         <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+          <a href="***SEGUNDA PAGINA**" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
         </div>
         <br><br>
 
       </div>
     </div>
-    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="assets/materialize/img/background1.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
 
@@ -78,7 +78,7 @@
       </div>
     </div>
 
-    <div class="parallax"><img src="<?php echo base_url();?>assets/materialize/img/background2.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="assets/materialize/img/background2.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
   <div class="container">
@@ -104,5 +104,5 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img src="assets/materialize/img/background3.jpg" alt="Unsplashed background img 3"></div>
   </div>
