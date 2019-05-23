@@ -25,7 +25,6 @@
         <div class="row center">
           <a href="<?php echo base_url()?>index.php/Pages2/view" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
         </div>
-     
         <br><br>
 
       </div>

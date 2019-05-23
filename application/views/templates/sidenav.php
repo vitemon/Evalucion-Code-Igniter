@@ -1,5 +1,3 @@
-
-
 <ul id="slide-out" class="sidenav">
   <li><div class="user-view">
     <div class="background">
@@ -15,4 +13,3 @@
   <li><a class="subheader">Subheader</a></li>
   <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
 </ul>
-
