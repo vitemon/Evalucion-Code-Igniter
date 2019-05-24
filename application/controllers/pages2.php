@@ -18,4 +18,16 @@ class Pages2 extends CI_Controller {
             $this->load->view('templates/datatable', $data);
             $this->load->view('templates/footer2', $data);
         }
+
+        public function table()
+        {
+                $this->load->helper('url_helper');
+                $this->load->model('Contact_models');
+                $data['userArray'] = $this->Contact_models->get_Data();      
+
+       
+       
+                $this->load->view('templates/datatable', $data);
+            
+        }
 }

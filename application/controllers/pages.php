@@ -31,10 +31,23 @@ class Pages extends CI_Controller {
                         $data['userArray'] = $this->Contact_models->get_Data();      
                         $this->load->view('templates/header');
                         $this->load->view('templates/sidenav');
-                        $this->load->view('pages/home2');
+                        $this->load->view('Pages/home2');
                         $this->load->view('templates/datatable', $data);
                         $this->load->view('templates/footer2');
                 }
         
         }
+        public function table()
+        {
+                $this->load->helper('url_helper');
+                $this->load->model('Contact_models');
+                $data['userArray'] = $this->Contact_models->get_Data();      
+
+       
+       
+                $this->load->view('templates/datatable', $data);
+            
+        }
+     
+        
 }

@@ -1,10 +1,12 @@
 <div class="container">
-
-    <table class="table">
+<div id="tableHolder">
+    <table >
         <thead>
             <tr>
-                <th>Email</th>
+                <th>Nombre</th>
+                <th>Correo Electrónico</th>
                 <th>Comentario</th>
+                
             </tr>
         </thead>
         <?php
@@ -14,12 +16,14 @@
                 // echo "<pre>";
             echo "<tbody>
                     <tr>
-                       <td>".$value->email."</td>
                        <td>".$value->name."</td>
+                       <td>".$value->email."</td>
+                       <td>".$value->textarea."</td>
                     </tr>
                 </tbody>";
     }
     ?>
     </table>
     <br><br>
+</div>
 </div>

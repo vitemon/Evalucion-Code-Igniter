@@ -19,6 +19,7 @@ class Contact_models extends CI_Model {
                 );
                 return $this->db->insert('contact', $data);
         }
+        
         public function get_Data() {
                 $this->load->database();
                 $query = $this->db->query("SELECT * FROM contact");
