@@ -54,5 +54,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $route['(:any)'] = 'pages/view/$1';
 $route['default_controller'] = 'pages/view';
-$route['pages2/(:any)'] = 'pages2/view/$1';
-$route['pages2'] = 'pages2';
+// $route['pages2/(:any)'] = 'pages2/view/$1';
+// $route['pages2'] = 'pages2';
+// $route['pages3/(:any)'] = 'pages3/view/$1';
+// $route['pages3'] = 'pages3';
