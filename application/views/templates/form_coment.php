@@ -3,7 +3,6 @@
         <h4>Contacto</h4>
         </div>
         <div class="row">
-            <?php echo validation_errors(); ?>
             <?php echo form_open('pages/view'); ?>
         <div class="row">
             <div class="input-field col s6">
