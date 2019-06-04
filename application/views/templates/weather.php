@@ -13,13 +13,35 @@
     curl_close($curl);
     $data = json_decode($response,TRUE);
     $arrayData = array();
+    $dayUx1 = $data["forecast"]["forecastday"][1]["date_epoch"];
+    $dt = new DateTime("@$dayUx1"); 
+  
+
 ?>
 
-    <div class="container center row">
-        <table class="row center">
+<br>
+    <div class="container">
+        <div class="row">
+            <form>
+            <div class="row">
+            <div class="input-field col s10">
+                <input name="city" id="city" type="text" class="validate"/>
+                <label for="city">Ciudad</label>
+            </div>
+            <div class="input-field col s2">
+                <button class="btn waves-effect waves-light" type="submit" name="action" value="Submit"> Submit
+                <i class="material-icons right"> send </i></button> 
+            </div>
+            </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <table class="responsive-table">
             <thead>
-                <h2>Clima de hoy:</h2>
-                <tr">
+                <h2 class="center">Clima de hoy:</h2>
+                <tr>
                     <th class="center"><h3>Ciudad:</h3></th>
                     <th class="center"><h4><?php echo $data["location"]["name"];?>,<?php echo $data["location"]["region"];?>,<?php echo $data["location"]["country"];?> </h4></th>
                 </tr>
@@ -35,14 +57,16 @@
                 </tr>
             </tbody>
         </table>
+        </div>
         <br><br>
-        <table class="row center">
+        <div class="container">
+        <table class="responsive-table">
                 <thead>
-                <h2>Próximos dias:</h2>
+                <h2 class="center">Próximos dias:</h2>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="center"><h3>Mañana:</h3></td>
+                        <td class="center"><h3><?php echo $dt->format('l');?></h3></td> 
                         <td class="center"><img src="<?php echo $data["forecast"]["forecastday"][0]["day"]["condition"]["icon"];?>" alt="img">
                         <h4><?php echo $data["forecast"]["forecastday"][0]["day"]["avgtemp_c"];?> centigrados </h4></td>
                     </tr>
