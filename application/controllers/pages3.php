@@ -26,12 +26,12 @@ class Pages3 extends CI_Controller
             // Whoops, we don't have a page for that! 
             show_404();
         }
-        $this->load->view('templates/header', $data);
-        $this->load->view('pages/' . $page, $data);
-        $this->load->view('templates/form_weather', $data);
+        $this->load->view('templates/header');
+        $this->load->view('pages/' . $page);
+        $this->load->view('templates/form_weather');
         if ($this->input->post('submit') != NULL) {
             $this->load->view('templates/weather', $data);
         }
-        $this->load->view('templates/footer2', $data);
+        $this->load->view('templates/footer2');
     }
 }

@@ -3,7 +3,9 @@
         <h4>Contacto</h4>
         </div>
         <div class="row">
-            <?php echo form_open('pages/view'); ?>
+
+        <?php echo validation_errors(); ?>
+                <?php echo form_open('pages/view'); ?>
         <div class="row">
             <div class="input-field col s6">
                 <input name="first_name" id="first_name" type="text" class="validate"/>
